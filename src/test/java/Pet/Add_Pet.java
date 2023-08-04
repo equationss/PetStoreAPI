@@ -1,16 +1,11 @@
 package Pet;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.testng.Assert.assertEquals;
-
-import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PetAPI_Tests {
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
 
+public class Add_Pet {
 
     @Test
     public void AddNewPet() {
@@ -40,4 +35,5 @@ public class PetAPI_Tests {
                 // Asserting the status code to be 200 for successful creation
                         post("pet").then().statusCode(200);
     }
+
 }
