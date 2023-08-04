@@ -2,8 +2,6 @@ package User;
 
 import org.testng.annotations.Test;
 
-import java.lang.annotation.Target;
-
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
