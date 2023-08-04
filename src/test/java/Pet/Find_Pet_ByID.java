@@ -10,7 +10,7 @@ public class Find_Pet_ByID {
     String petId = "1";
     @Test
     public void FindByID() {
-        // Sending the POST request and getting the response
+        // Sending the request and getting the response
         baseURI= "https://petstore.swagger.io/v2/";
         given().
                 get("pet/" + petId )

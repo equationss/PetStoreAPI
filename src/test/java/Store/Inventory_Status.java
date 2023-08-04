@@ -11,7 +11,7 @@ public class Inventory_Status {
     public void Status()
     {
 
-        // Sending the POST request and getting the response
+        // Sending the request and getting the response
         baseURI= "https://petstore.swagger.io/v2/";
         given().
                 // Asserting the status code to be 200 for successful creation

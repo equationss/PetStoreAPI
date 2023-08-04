@@ -1,21 +1,26 @@
-package Store;
+package User;
 
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-public class Delete_Order {
+public class User_Login {
 
     @Test
-    public void Delete_Order()
+    public void Login()
+
     {
-        String OrderID = "1";
+        String Username = "Junaid";
+        String Password = "1122";
+
         // Sending the request and getting the response
         baseURI= "https://petstore.swagger.io/v2/";
         given().
+                auth().basic(Username,Password).
                 // Asserting the status code to be 200 for successful creation
-                        delete("store/order/" + OrderID).then().statusCode(200).log().all();
+                        get("user/login").then().statusCode(200).log().all();
+
 
 
     }

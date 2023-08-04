@@ -11,7 +11,7 @@ public class Delete_Pet {
     public void DeletePet(){
 
         String petId = "1";
-            // Sending the POST request and getting the response
+            // Sending the request and getting the response
             baseURI= "https://petstore.swagger.io/v2/";
             given().delete("pet/" + petId )
                     // Asserting the status code to be 200 for successful creation

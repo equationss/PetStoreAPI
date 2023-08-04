@@ -29,7 +29,7 @@ public class Update_Pet {
                 "        \"status\": \"available\"\n" +
                 "     }";
 
-        // Sending the POST request and getting the response
+        // Sending the request and getting the response
         baseURI = "https://petstore.swagger.io/v2/";
         given().
                 header("Content-Type", "application/json").
